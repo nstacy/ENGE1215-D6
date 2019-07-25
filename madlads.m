@@ -28,8 +28,10 @@ loglog(xSet, ySet, '*');
 title("Scatter Plot of GDP's relationship to CO2");
 xlabel("GDP per capita (USD/person)");
 ylabel("CO2 emission per capita (kg emission/person)");
+
+logx = log(xSet);
+logy = log(ySet);
+Const = polyfit(logx, logy, 1);
 hold on;
-    coef_fit = polyfit(xSet,ySet,1);
-    y_fit = polyval(coef_fit,xlim);
-    plot(xlim,y_fit,'r');
+    plot(xSet, exp(polyval(Const, logx)));
 hold off;
