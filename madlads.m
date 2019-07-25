@@ -1,6 +1,7 @@
 clear
 clc
 load('D6ClimateData.mat')
+
 %Constants
 KT_TO_KG = 1000000;
 M_TO_USD = 1000000;
@@ -17,10 +18,18 @@ while n ~= 7628
         y = CARBON_DIOXIDE(index) * KT_TO_KG / POPULATION(index);
         xSet = [xSet; x];
         ySet = [ySet; y];
-        loglog(xSet, ySet, '*');
     end
     n = n + 1;
     index = index + 1;
 end
-xlabel("GDP per capita");
-ylabel("CO2 Emission Per Capita");
+
+%Graph
+loglog(xSet, ySet, '*');
+title("Scatter Plot of GDP's relationship to CO2");
+xlabel("GDP per capita (USD/person)");
+ylabel("CO2 emission per capita (kg emission/person)");
+hold on;
+    coef_fit = polyfit(xSet,ySet,1);
+    y_fit = polyval(coef_fit,xlim);
+    plot(xlim,y_fit,'r');
+hold off;
