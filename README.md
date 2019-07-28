@@ -49,25 +49,16 @@ Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Will fill out later](http://www.google.com) - yes
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## Authors
-* **Ron Yue** - *Developer* - [Github](https://github.com/rongtianyue)
-* **Devan Eilbert** - *{INSERT_ROLES}* - [Github]
-* **Xiang Li** - *{INSERT_ROLES}* - [Github]
-* **Crystal Wang** - *{INSERT_ROLES}* - [Github]
-* **Nick Stacy** - *{INSERT_ROLES}* - [Github]
-* **Risa Dickerman** - *{INSERT_ROLES}* - [Github]
+* **Ron Yue** 
+* **Devan Eilbert**
+* **Xiang Li** 
+* **Crystal Wang** 
+* **Nick Stacy** 
+* **Risa Dickerman**
 
 ## License
 
@@ -75,6 +66,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Bibliography
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* /todo..
